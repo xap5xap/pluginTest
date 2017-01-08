@@ -1,14 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-xap-test" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>xap-test</name>
-    <js-module name="xap-test" src="www/xap-test.js"><clobbers target="cordova.plugins.xap-test"/></js-module>
+<plugin id="cordova-plugin-xaptest" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>xapTest</name>
+    <js-module name="xaptest" src="www/xaptest.js">
+      <clobbers target="cordova.plugins.xaptest"/>
+    </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="xap-test">
-                <param name="android-package" value="cordova-plugin-xap-test.xap-test"/>
+            <feature name="xaptest">
+                <param name="android-package" value="cordova-plugin-xaptest.xaptest"/>
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
-        <source-file src="src/android/xap-test.java" target-dir="src/cordova-plugin-xap-test/xap-test"/>
+        <source-file src="src/android/xaptest.java" target-dir="src/cordova-plugin-xap-test/xaptest"/>
     </platform>
 </plugin>

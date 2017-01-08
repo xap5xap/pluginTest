@@ -1,4 +1,4 @@
-package cordova-plugin-xap-test;
+package cordova.plugins.xaptest;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -10,7 +10,7 @@ import org.json.JSONObject;
 /**
  * This class echoes a string called from JavaScript.
  */
-public class xap-test extends CordovaPlugin {
+public class xaptest extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
